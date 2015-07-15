@@ -1,33 +1,37 @@
-'use strict'
-
-var webpack = require('webpack')
+/**
+ * @author: vincent
+ * @date: 15/5/19
+ */
+var webpack = require('webpack');
+var loaders = require('./loader.config');
 
 module.exports = {
-    entry: [
-        // 'webpack-dev-server/client?http://localhost:9090/assets',
-        // 'webpack/hot/only-dev-server',
-        './example/index.jsx'
-    ],
+    entry: {
+        index: './example/index.jsx'
+    },
     output: {
-        publicPath: 'http://localhost:9090/assets'
+        publicPath: '/example',
+        filename: '[name].bundle.js',
+        chunkFilename: '[name].[id].bundle.js'
     },
     module: {
-        loaders: require('./loaders.config')
-    },
-    externals: {
-        'react': 'React'
+        loaders: loaders
     },
     resolve: {
-        extensions: ['', '.js', '.jsx']
+        extensions: ['', '.js', '.jsx'],
+        alias: {
+            'react': 'react/dist/react.js'
+        }
     },
     plugins: [
-        //needed to supress vertx warning in es6-promise (Promise polyfill)
-        new webpack.IgnorePlugin(/vertx/)
-        // new webpack.HotModuleReplacementPlugin(),
-        // new webpack.NoErrorsPlugin()
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'vender',
+            filename: 'vender.js'
+        })
     ],
-
-    devServer: {    
+    debug: true,
+    devtool: 'eval',
+    devServer: {
         info: true,
         quiet: false,
 
@@ -36,4 +40,4 @@ module.exports = {
             progress: true
         }
     }
-}
+};
