@@ -19,7 +19,6 @@
   top: -9999px;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -31,12 +30,19 @@
   margin-left: -3px;
   padding: 0 5px;
 }
-.kuma-tooltip-placement-left > .rc-tree-arrow {
+.kuma-tooltip-placement-left > .kuma-tooltip-arrow {
   top: 50%;
   right: 0;
   margin-top: -5px;
   border-width: 5px 0 5px 5px;
-  border-left-color: #000000;
+  border-left-color: #b1b1b1;
+}
+.kuma-tooltip-placement-left > .kuma-tooltip-arrow:before {
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  left: -6px;
+  top: 0;
+  border-left-color: #fff;
 }
 .kuma-tooltip-placement-top {
   margin-top: -3px;
@@ -47,7 +53,14 @@
   left: 50%;
   margin-left: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #000000;
+  border-top-color: #b1b1b1;
+}
+.kuma-tooltip-placement-top > .kuma-tooltip-arrow:before {
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  left: 0;
+  top: -6px;
+  border-top-color: #fff;
 }
 .kuma-tooltip-placement-bottom {
   margin-top: 3px;
@@ -58,7 +71,14 @@
   left: 50%;
   margin-left: -5px;
   border-width: 0 5px 5px;
-  border-bottom-color: #000000;
+  border-bottom-color: #b1b1b1;
+}
+.kuma-tooltip-placement-bottom > .kuma-tooltip-arrow:before {
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  left: 0;
+  top: 1px;
+  border-bottom-color: #fff;
 }
 .kuma-tooltip-placement-right {
   margin-left: 3px;
@@ -69,7 +89,14 @@
   left: 0;
   margin-top: -5px;
   border-width: 5px 5px 5px 0;
-  border-right-color: #000000;
+  border-right-color: #b1b1b1;
+}
+.kuma-tooltip-placement-right > .kuma-tooltip-arrow:before {
+  margin-top: -4px;
+  border-width: 5px 5px 5px 0;
+  left: 1px;
+  top: -1px;
+  border-right-color: #fff;
 }
 .kuma-tooltip-arrow {
   position: absolute;
@@ -78,13 +105,22 @@
   border-color: transparent;
   border-style: solid;
 }
+.kuma-tooltip-arrow:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
 .kuma-tooltip-inner {
   padding: 3px 8px;
-  color: #ffffff;
+  color: #333;
   text-align: center;
   text-decoration: none;
-  background-color: #000000;
-  border-radius: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid #b1b1b1;
 }
 .kuma-tooltip.kuma-tooltip-zoom-enter,
 .kuma-tooltip.kuma-tooltip-zoom-leave {
