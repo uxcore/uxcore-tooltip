@@ -1,15 +1,10 @@
 # uxcore-tooltip
 
-- tags: uxcore, tooltip
-- description: uxcore tooltip
-- maintainers: vincent.bian
-- version: 0.1.1
-- lastupdate: 2015/9/11
-- screenshots:
-
 ---
 
 ## TL;DR
+
+tooltip ui component for react
 
 #### setup develop environment
 
@@ -17,9 +12,8 @@
 $ git clone https://github.com/uxcore/uxcore-tooltip
 $ cd uxcore-tooltip
 $ npm install
-$ npm run dev
+$ gulp server
 ```
-nav http://localhost:9090/webpack-dev-server/example/ to see the demo
 
 ## Usage
 
@@ -36,7 +30,7 @@ React.render(
 ```
 
 ### demo
-http://uxcore.github.io/uxcore-tooltip/
+http://uxcore.github.io/uxcore/components/tooltip/
 
 ## API
 
