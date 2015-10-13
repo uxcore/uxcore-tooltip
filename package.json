@@ -1,6 +1,6 @@
 {
   "name": "uxcore-tooltip",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "uxcore-tooltip ui component for react",
   "main": "src/index.js",
   "scripts": {
