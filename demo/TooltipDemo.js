@@ -6,22 +6,22 @@ export default class Demo extends React.Component {
 		return (
 			<div>
 				<div>
-					<Tooltip title="提示文字" placement="bottom">
+					<Tooltip overlay="提示文字" placement="bottom">
 						<span>鼠标hover出现提示</span>
 					</Tooltip>
 				</div>
 				<div>
 					<p>鼠标点击出现提示</p>
-					<Tooltip title="提示文字" placement="top" trigger="click">
+					<Tooltip overlay="提示文字" placement="top" trigger={['click']}>
 						<span>上</span>
 					</Tooltip>
-					<Tooltip title="提示文字" placement="bottom" trigger="click">
+					<Tooltip overlay="提示文字" placement="bottom" trigger={['click']}>
 						<span>下</span>
 					</Tooltip>
-					<Tooltip title="提示文字" placement="left" trigger="click">
+					<Tooltip overlay="提示文字" placement="left" trigger={['click']}>
 						<span>左</span>
 					</Tooltip>
-					<Tooltip title="提示文字" placement="right" trigger="click">
+					<Tooltip overlay="提示文字" placement="right" trigger={['click']}>
 						<span>右</span>
 					</Tooltip>
 				</div>
