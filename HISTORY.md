@@ -2,6 +2,10 @@
 
 ---
 
+## 0.2.1
+
+`CHANGED` update rc-tooltip to ~3.0.0
+
 ## 0.2.0
 `FIXED` #1
 `CHANGED` upgrade to rc-tooltip@2.7.0

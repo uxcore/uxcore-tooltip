@@ -1,6 +1,6 @@
 {
   "name": "uxcore-tooltip",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "uxcore-tooltip ui component for react",
   "main": "src/index.js",
   "scripts": {
@@ -40,7 +40,7 @@
   "dependencies": {
     "classnames": "^2.1.2",
     "object-assign": "^2.0.0",
-    "rc-tooltip": "~2.7.0"
+    "rc-tooltip": "~3.1.0"
   },
   "author": "vincent.bian",
   "contributors": [],
