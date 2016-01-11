@@ -9,6 +9,8 @@ export default class Tooltip extends RcTooltip {
 }
 Tooltip.displayName = 'uxcore-tooltip';
 Tooltip.propTypes = RcTooltip.propTypes;
-Tooltip.defaultProps = assign(Tooltip.defaultProps, {
-	prefixCls: 'kuma-tooltip'
+
+Tooltip.defaultProps = assign(RcTooltip.defaultProps, {
+	prefixCls: 'kuma-tooltip',
+	overlayClassName: 'uxcore'
 });
