@@ -1,4 +1,3 @@
-import React from 'react';
 import RcTooltip from 'rc-tooltip';
 import assign from 'object-assign';
 
