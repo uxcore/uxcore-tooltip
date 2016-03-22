@@ -5,8 +5,17 @@
  * Copyright 2014-2015, Uxcore Team, Alinw.
  * All rights reserved.
  */
-@import "../node_modules/uxcore-kuma/src/variables";
+// @import "../node_modules/uxcore-kuma/src/variables";
+@import '../style/kuma-base/variable.less';
+@import '../style/kuma-base/core.less';
 @import "../src/Tooltip.less";
+
+html {
+    box-sizing: border-box;
+    * {
+        box-sizing: inherit;
+    }
+}
 
 .demo {
     padding: 30px;

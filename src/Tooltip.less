@@ -6,33 +6,33 @@
  * All rights reserved.
  */
 
-@tooltipPrefixCls: kuma-tooltip;
+@__tooltipPrefixCls: kuma-tooltip;
 
-.@{tooltipPrefixCls} {
-  position: absolute;
-  left: -9999px;
-  top: -9999px;
-  z-index: 1070;
-  display: block;
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 1.4;
+.@{__tooltipPrefixCls} {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    z-index: 1070;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.4;
 
-  &-hidden {
-    display: none;
-  }
+    &-hidden {
+        display: none;
+    }
 
   &-placement {
     &-left {
       margin-left: -3px;
       padding: 0 5px;
 
-      & > .@{tooltipPrefixCls}-arrow {
+      & .@{__tooltipPrefixCls}-arrow {
         top: 50%;
         right: 0;
         margin-top: -5px;
         border-width: 5px 0 5px 5px;
-        border-left-color: #b1b1b1;
+        border-left-color: @basic-600;
         &:before {
             margin-top: -5px;
             border-width: 5px 0 5px 5px;
@@ -47,12 +47,12 @@
       margin-top: -3px;
       padding: 5px 0;
 
-      & > .@{tooltipPrefixCls}-arrow {
+      & .@{__tooltipPrefixCls}-arrow {
         bottom: 0;
         left: 50%;
         margin-left: -5px;
         border-width: 5px 5px 0;
-        border-top-color: #b1b1b1;
+        border-top-color: @basic-600;
         &:before {
             margin-left: -5px;
             border-width: 5px 5px 0;
@@ -67,12 +67,12 @@
       margin-top: 3px;
       padding: 5px 0;
 
-      & > .@{tooltipPrefixCls}-arrow {
+      & .@{__tooltipPrefixCls}-arrow {
         top: 0;
         left: 50%;
         margin-left: -5px;
         border-width: 0 5px 5px;
-        border-bottom-color: #b1b1b1;
+        border-bottom-color: @basic-600;
         &:before {
             margin-left: -5px;
             border-width: 0 5px 5px;
@@ -88,12 +88,12 @@
       margin-left: 3px;
       padding: 0 5px;
 
-      & > .@{tooltipPrefixCls}-arrow {
+      & .@{__tooltipPrefixCls}-arrow {
         top: 50%;
         left: 0;
         margin-top: -5px;
         border-width: 5px 5px 5px 0;
-        border-right-color: #b1b1b1;
+        border-right-color: @basic-600;
         &:before {
             margin-top: -4px;
             border-width: 5px 5px 5px 0;
@@ -120,71 +120,18 @@
         border-style: solid;
     }
   }
-
-  &-inner {
-    padding: 3px 8px;
-    color: #333;
-    text-align: center;
-    text-decoration: none;
-    background-color: #fff;
-    border-radius: 2px;
-    border: 1px solid #b1b1b1;
-  }
-
-  .effect() {
-    animation-duration: 0.3s;
-    animation-fill-mode: both;
-  }
-
-  &&-zoom-enter, &&-zoom-leave {
-    display: block;
-  }
-
-  &-zoom-enter {
-    opacity: 0;
-    .effect();
-    animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
-    animation-play-state: paused;
-  }
-
-  &-zoom-leave {
-    .effect();
-    animation-timing-function: cubic-bezier(0.6, -0.3, 0.74, 0.05);
-    animation-play-state: paused;
-  }
-
-  &-zoom-enter&-zoom-enter-active {
-    animation-name: rctreeZoomIn;
-    animation-play-state: running;
-  }
-
-  &-zoom-leave&-zoom-leave-active {
-    animation-name: rctreeZoomOut;
-    animation-play-state: running;
-  }
-
-  @keyframes rctreeZoomIn {
-    0% {
-      opacity: 0;
-      transform-origin: 50% 50%;
-      transform: scale(0, 0);
+  
+    &-content {
+        box-shadow: 0 0 5px -1px rgba(0, 0, 0, .2);
+        border-radius: 2px;
+        border: 1px solid @basic-500;
     }
-    100% {
-      opacity: 1;
-      transform-origin: 50% 50%;
-      transform: scale(1, 1);
+
+    &-inner {
+        padding: 14px 18px;
+        color: @seconary-text-color;
+        text-align: center;
+        text-decoration: none;
+        background-color: #fff;
     }
-  }
-  @keyframes rctreeZoomOut {
-    0% {
-      opacity: 1;
-      transform-origin: 50% 50%;
-      transform: scale(1, 1);
-    }
-    100% {
-      opacity: 0;
-      transform-origin: 50% 50%;
-      transform: scale(0, 0);
-    }
-  }
 }
