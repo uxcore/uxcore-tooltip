@@ -3,6 +3,11 @@ History
 
 ---
 
+0.3.3
+-----
+
+`CHANGED` add default transition name
+
 0.3.0
 -----
 

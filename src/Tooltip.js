@@ -11,5 +11,5 @@ Tooltip.propTypes = RcTooltip.propTypes;
 
 Tooltip.defaultProps = assign(RcTooltip.defaultProps, {
 	prefixCls: 'kuma-tooltip',
-	overlayClassName: 'uxcore'
+    transitionName: 'flip'
 });
