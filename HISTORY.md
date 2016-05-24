@@ -3,6 +3,11 @@ History
 
 ---
 
+0.3.4
+-----
+
+`CHANGED` add another eight directions
+
 0.3.3
 -----
 

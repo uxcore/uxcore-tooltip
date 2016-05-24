@@ -23,7 +23,9 @@
     }
 
   &-placement {
-    &-left {
+    &-left,
+    &-leftTop,
+    &-leftBottom {
       margin-left: -3px;
       padding: 0 5px;
 
@@ -43,7 +45,16 @@
       }
     }
 
-    &-top {
+    &-leftTop .@{__tooltipPrefixCls}-arrow {
+        top: 15%;
+    }
+    &-leftBottom .@{__tooltipPrefixCls}-arrow {
+        top: 85%;
+    }
+
+    &-top,
+    &-topLeft,
+    &-topRight {
       margin-top: -3px;
       padding: 5px 0;
 
@@ -63,7 +74,16 @@
       }
     }
 
-    &-bottom {
+    &-topLeft .@{__tooltipPrefixCls}-arrow {
+        left: 15%;
+    }
+    &-topRight .@{__tooltipPrefixCls}-arrow {
+        left: 85%;
+    }
+
+    &-bottom,
+    &-bottomLeft,
+    &-bottomRight {
       margin-top: 3px;
       padding: 5px 0;
 
@@ -81,10 +101,18 @@
             border-bottom-color: #fff;
         }
       }
-
     }
 
-    &-right {
+    &-bottomLeft .@{__tooltipPrefixCls}-arrow {
+        left: 15%;
+    }
+    &-bottomRight .@{__tooltipPrefixCls}-arrow {
+        left: 85%;
+    }
+
+    &-right,
+    &-rightTop,
+    &-rightBottom {
       margin-left: 3px;
       padding: 0 5px;
 
@@ -103,7 +131,15 @@
         }
       }
     }
+    &-rightTop .@{__tooltipPrefixCls}-arrow {
+        top: 15%;
+    }
+    &-rightBottom .@{__tooltipPrefixCls}-arrow {
+        top: 85%;
+    }
   }
+
+
 
   &-arrow {
     position: absolute;
