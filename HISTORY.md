@@ -3,6 +3,11 @@ History
 
 ---
 
+0.4.0
+----
+
+`CHANGED` new animation
+
 0.3.4
 -----
 
