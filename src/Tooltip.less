@@ -175,7 +175,7 @@
 
 @keyframes tipSlideInLeft {
   0% {
-    transform: translate(-10px, 0);
+    transform: translate(10px, 0);
     opacity: 0;
   }
   100% {
@@ -190,7 +190,7 @@
     opacity: 1;
   }
   100% {
-    transform: translate(-10px, 0);
+    transform: translate(10px, 0);
     opacity: 0;
   }
 }
@@ -201,8 +201,8 @@
   &.tip-slide-enter,
   &.tip-slide-appear {
     opacity: 0;
-    transform: translate(-10px, 0);
-    animation-timing-function: ease-out;
+    transform: translate(10px, 0);
+    animation-timing-function: @transition-duration;
     animation-duration: .15s; 
   }
   &.tip-slide-enter-active,
@@ -212,7 +212,7 @@
   &.tip-slide-leave {
     opacity: 1;
     transform: translate(0, 0);
-    animation-timing-function: ease-out;
+    animation-timing-function: @transition-duration;
     animation-duration: .15s; 
   }
   &.tip-slide-leave-active {
@@ -222,7 +222,7 @@
 
 @keyframes tipSlideInRight {
   0% {
-    transform: translate(10px, 0);
+    transform: translate(-10px, 0);
     opacity: 0;
   }
   100% {
@@ -237,7 +237,7 @@
     opacity: 1;
   }
   100% {
-    transform: translate(10px, 0);
+    transform: translate(-10px, 0);
     opacity: 0;
   }
 }
@@ -248,8 +248,8 @@
   &.tip-slide-enter,
   &.tip-slide-appear {
     opacity: 0;
-    transform: translate(10px, 0);
-    animation-timing-function: ease-out;
+    transform: translate(-10px, 0);
+    animation-timing-function: @transition-duration;
     animation-duration: .15s; 
   }
   &.tip-slide-enter-active,
@@ -259,7 +259,7 @@
   &.tip-slide-leave {
     opacity: 1;
     transform: translate(0, 0);
-    animation-timing-function: ease-out;
+    animation-timing-function: @transition-duration;
     animation-duration: .15s; 
   }
   &.tip-slide-leave-active {
@@ -269,7 +269,7 @@
 
 @keyframes tipSlideInBottom {
   0% {
-    transform: translate(0, 10px);
+    transform: translate(0, -10px);
     opacity: 0;
   }
   100% {
@@ -284,7 +284,7 @@
     opacity: 1;
   }
   100% {
-    transform: translate(0, 10px);
+    transform: translate(0, -10px);
     opacity: 0;
   }
 }
@@ -295,8 +295,8 @@
   &.tip-slide-enter,
   &.tip-slide-appear {
     opacity: 0;
-    transform: translate(0, 10px);
-    animation-timing-function: ease-out;
+    transform: translate(0, -10px);
+    animation-timing-function: @transition-duration;
     animation-duration: .15s; 
   }
   &.tip-slide-enter-active,
@@ -306,7 +306,7 @@
   &.tip-slide-leave {
     opacity: 1;
     transform: translate(0, 0);
-    animation-timing-function: ease-out;
+    animation-timing-function: @transition-duration;
     animation-duration: .15s; 
   }
   &.tip-slide-leave-active {
@@ -316,7 +316,7 @@
 
 @keyframes tipSlideInTop {
   0% {
-    transform: translate(0, -10px);
+    transform: translate(0, 10px);
     opacity: 0;
   }
   100% {
@@ -331,7 +331,7 @@
     opacity: 1;
   }
   100% {
-    transform: translate(0, -10px);
+    transform: translate(0, 10px);
     opacity: 0;
   }
 }
@@ -342,8 +342,8 @@
   &.tip-slide-enter,
   &.tip-slide-appear {
     opacity: 0;
-    transform: translate(0, -10px);
-    animation-timing-function: ease-out;
+    transform: translate(0, 10px);
+    animation-timing-function: @transition-duration;
     animation-duration: .15s; 
   }
   &.tip-slide-enter-active,
@@ -353,7 +353,7 @@
   &.tip-slide-leave {
     opacity: 1;
     transform: translate(0, 0);
-    animation-timing-function: ease-out;
+    animation-timing-function: @transition-duration;
     animation-duration: .15s; 
   }
   &.tip-slide-leave-active {

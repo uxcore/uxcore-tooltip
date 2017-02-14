@@ -3,6 +3,12 @@ History
 
 ---
 
+0.4.3
+---
+
+* `CHANGED` use global transition ease
+* `CHANGED` change animation directions
+
 0.4.0
 ----
 
