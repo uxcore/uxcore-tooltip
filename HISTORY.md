@@ -3,6 +3,11 @@ History
 
 ---
 
+0.4.4
+---
+
+* `CHANGED` style change
+
 0.4.3
 ---
 
