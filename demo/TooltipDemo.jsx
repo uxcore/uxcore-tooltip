@@ -8,8 +8,9 @@ export default class Demo extends React.Component {
     return (
       <div className="demo">
         <div>
+          <h3>讲解：鼠标 Hover 出现提示</h3>
           <Tooltip overlay={overlay} placement="bottom">
-            <span>鼠标hover出现提示</span>
+            <span>hover出现提示</span>
           </Tooltip>
         </div>
         <div>

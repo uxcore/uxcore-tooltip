@@ -5,6 +5,7 @@
  * Copyright 2014-2015, Uxcore Team, Alinw.
  * All rights reserved.
  */
+@import "../node_modules/kuma-base/variable.less";
 
 @__tooltipPrefixCls: kuma-tooltip;
 
@@ -31,25 +32,23 @@
 
       & .@{__tooltipPrefixCls}-arrow {
         top: 50%;
-        right: 0;
+        right: 1px;
         margin-top: -5px;
-        border-width: 5px 0 5px 5px;
-        border-left-color: @basic-600;
-        &:before {
-            margin-top: -5px;
-            border-width: 5px 0 5px 5px;
-            left: -6px;
-            top: 0;
-            border-left-color: #fff;
-        }
+        width: 10px;
+        height: 10px;
+        border: 1px solid @normal-alpha-6;
+        background-color: #fff;
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        box-shadow: @box-shadow-1;
       }
     }
 
     &-leftTop .@{__tooltipPrefixCls}-arrow {
-        top: 25%;
+        top: 30%;
     }
     &-leftBottom .@{__tooltipPrefixCls}-arrow {
-        top: 75%;
+        top: 70%;
     }
 
     &-top,
@@ -59,26 +58,24 @@
       padding: 5px 0;
 
       & .@{__tooltipPrefixCls}-arrow {
-        bottom: 0;
+        bottom: 1px;
         left: 50%;
         margin-left: -5px;
-        border-width: 5px 5px 0;
-        border-top-color: @basic-600;
-        &:before {
-            margin-left: -5px;
-            border-width: 5px 5px 0;
-            left: 0;
-            top: -6px;
-            border-top-color: #fff;
-        }
+        width: 10px;
+        height: 10px;
+        border: 1px solid @normal-alpha-6;
+        background-color: #fff;
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        box-shadow: @box-shadow-1;
       }
     }
 
     &-topLeft .@{__tooltipPrefixCls}-arrow {
-        left: 15%;
+        left: 20%;
     }
     &-topRight .@{__tooltipPrefixCls}-arrow {
-        left: 85%;
+        left: 80%;
     }
 
     &-bottom,
@@ -88,26 +85,24 @@
       padding: 5px 0;
 
       & .@{__tooltipPrefixCls}-arrow {
-        top: 0;
+        top: 1px;
         left: 50%;
         margin-left: -5px;
-        border-width: 0 5px 5px;
-        border-bottom-color: @basic-600;
-        &:before {
-            margin-left: -5px;
-            border-width: 0 5px 5px;
-            left: 0;
-            top: 1px;
-            border-bottom-color: #fff;
-        }
+        width: 10px;
+        height: 10px;
+        border: 1px solid @normal-alpha-6;
+        background-color: #fff;
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        box-shadow: @box-shadow-1;
       }
     }
 
     &-bottomLeft .@{__tooltipPrefixCls}-arrow {
-        left: 15%;
+        left: 20%;
     }
     &-bottomRight .@{__tooltipPrefixCls}-arrow {
-        left: 85%;
+        left: 80%;
     }
 
     &-right,
@@ -118,56 +113,47 @@
 
       & .@{__tooltipPrefixCls}-arrow {
         top: 50%;
-        left: 0;
+        left: 1px;
         margin-top: -5px;
-        border-width: 5px 5px 5px 0;
-        border-right-color: @basic-600;
-        &:before {
-            margin-top: -4px;
-            border-width: 5px 5px 5px 0;
-            left: 1px;
-            top: -1px;
-            border-right-color: #fff;
-        }
+        width: 10px;
+        height: 10px;
+        border: 1px solid @normal-alpha-6;
+        background-color: #fff;
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        box-shadow: @box-shadow-1;
       }
     }
+
     &-rightTop .@{__tooltipPrefixCls}-arrow {
-        top: 25%;
+        top: 30%;
     }
     &-rightBottom .@{__tooltipPrefixCls}-arrow {
-        top: 75%;
+        top: 70%;
     }
   }
 
 
 
-  &-arrow {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-    &:before {
-        position: absolute;
-        content: '';
-        width: 0;
-        height: 0;
-        border-color: transparent;
-        border-style: solid;
+    &-arrow {
+      position: absolute;
     }
-  }
   
     &-content {
-        box-shadow: 0 0 5px -1px rgba(0, 0, 0, .2);
-        border-radius: 2px;
-        border: 1px solid @basic-500;
+        box-shadow: @box-shadow-1;
+        border-radius: @global-border-radius;
+        border: 1px solid @normal-alpha-6;
     }
 
     &-inner {
-        padding: 7px 12px;
+        position: relative;
+        z-index: 2;
+        padding: 8px 12px;
         color: @text-secondary-color;
         text-align: center;
+        color: @normal-alpha-2;
         text-decoration: none;
+        border-radius: @global-border-radius;
         background-color: #fff;
     }
 }
