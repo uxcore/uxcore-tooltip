@@ -1,5 +1,4 @@
 import RcTooltip from 'rc-tooltip';
-import assign from 'object-assign';
 
 export default class Tooltip extends RcTooltip {
     static displayName = 'uxcore-tooltip'
