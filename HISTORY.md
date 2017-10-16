@@ -3,6 +3,14 @@ History
 
 ---
 
+0.4.6
+---
+
+* `CHANGED` upgrade rc-tooltip to 3.5.x.
+* `FIXED` React 15.x compatible. Remove React.PropTypes warnings.
+* `CHANGED` use ES6 modules instead of commonjs
+
+
 0.4.4
 ---
 
