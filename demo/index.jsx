@@ -6,8 +6,8 @@
  * All rights reserved.
  */
 
-const React = require('react');
-const ReactDOM = require('react-dom');
-const Demo = require('./TooltipDemo');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Demo from './TooltipDemo';
 
 ReactDOM.render(<Demo />, document.getElementById('UXCoreDemo'));

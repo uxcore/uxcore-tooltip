@@ -6,4 +6,6 @@
  * All rights reserved.
  */
 
-module.exports = require('./Tooltip');
+import Tooltip from './Tooltip';
+
+export default Tooltip;
