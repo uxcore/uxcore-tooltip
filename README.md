@@ -18,7 +18,8 @@ $ gulp server
 ## Usage
 
 ```js
-var Tooltip = require('uxcore-tooltip');
+import Tooltip from 'uxcore-tooltip';
+
 ReactDOM.render(
 	<Tooltip
 		placement="top"
