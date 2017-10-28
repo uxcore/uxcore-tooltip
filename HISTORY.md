@@ -1,7 +1,10 @@
 History
 =======
 
+0.4.7
 ---
+
+* `CHANGED` update `rc-tooltip` to `^3.0.0`
 
 0.4.6
 ---
