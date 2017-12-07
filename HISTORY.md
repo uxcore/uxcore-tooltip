@@ -1,6 +1,11 @@
 History
 =======
 
+0.4.8
+---
+
+* `NEW` dark background tooltip
+
 0.4.7
 ---
 

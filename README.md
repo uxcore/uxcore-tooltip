@@ -17,7 +17,7 @@ $ gulp server
 
 ## Usage
 
-```js
+```jsx
 import Tooltip from 'uxcore-tooltip';
 
 ReactDOM.render(
