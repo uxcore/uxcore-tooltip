@@ -17,46 +17,46 @@ export default class Demo extends React.Component {
           <h3>讲解：鼠标点击出现提示</h3>
           <div className="container">
             <div className="top">
-              <Tooltip overlayClassName="kuma-tooltip-dark" overlay={overlay} placement="topLeft" trigger={['click']}>
+              <Tooltip overlay={overlay} placement="topLeft" trigger={['click']}>
                 <Button size="small" type="outline">上左</Button>
               </Tooltip>
-              <Tooltip overlayClassName="kuma-tooltip-dark" overlay={overlay} placement="top" trigger={['click']}>
+              <Tooltip overlay={overlay} placement="top" trigger={['click']}>
                 <Button style={{ marginLeft: 10 }} size="small" type="outline">上</Button>
               </Tooltip>
-              <Tooltip overlayClassName="kuma-tooltip-dark" overlay={overlay} placement="topRight" trigger={['click']}>
+              <Tooltip overlay={overlay} placement="topRight" trigger={['click']}>
                 <Button style={{ marginLeft: 10 }} size="small" type="outline">上右</Button>
               </Tooltip>
             </div>
             <div className="bottom">
-              <Tooltip overlayClassName="kuma-tooltip-dark" overlay={overlay} placement="bottomLeft" trigger={['click']}>
+              <Tooltip overlay={overlay} placement="bottomLeft" trigger={['click']}>
                 <Button size="small" type="outline">下左</Button>
               </Tooltip>
-              <Tooltip overlayClassName="kuma-tooltip-dark" overlay={overlay} placement="bottom" trigger={['click']}>
+              <Tooltip overlay={overlay} placement="bottom" trigger={['click']}>
                 <Button style={{ marginLeft: 10 }} size="small" type="outline">下</Button>
               </Tooltip>
-              <Tooltip overlayClassName="kuma-tooltip-dark" overlay={overlay} placement="bottomRight" trigger={['click']}>
+              <Tooltip overlay={overlay} placement="bottomRight" trigger={['click']}>
                 <Button style={{ marginLeft: 10 }} size="small" type="outline">下右</Button>
               </Tooltip>
             </div>
             <div className="left">
-              <Tooltip overlayClassName="kuma-tooltip-dark" overlay={overlay} placement="leftTop" trigger={['click']}>
+              <Tooltip overlay={overlay} placement="leftTop" trigger={['click']}>
                 <Button size="small" type="outline">左上</Button>
               </Tooltip>
-              <Tooltip overlayClassName="kuma-tooltip-dark" overlay={overlay} placement="left" trigger={['click']}>
+              <Tooltip overlay={overlay} placement="left" trigger={['click']}>
                 <Button style={{ marginTop: 10 }} size="small" type="outline">左</Button>
               </Tooltip>
-              <Tooltip overlayClassName="kuma-tooltip-dark" overlay={overlay} placement="leftBottom" trigger={['click']}>
+              <Tooltip overlay={overlay} placement="leftBottom" trigger={['click']}>
                 <Button style={{ marginTop: 10 }} size="small" type="outline">左下</Button>
               </Tooltip>
             </div>
             <div className="right">
-              <Tooltip overlayClassName="kuma-tooltip-dark" overlay={overlay} placement="rightTop" trigger={['click']}>
+              <Tooltip overlay={overlay} placement="rightTop" trigger={['click']}>
                 <Button size="small" type="outline">右上</Button>
               </Tooltip>
-              <Tooltip overlayClassName="kuma-tooltip-dark" overlay={overlay} placement="right" trigger={['click']}>
+              <Tooltip overlay={overlay} placement="right" trigger={['click']}>
                 <Button style={{ marginTop: 10 }} size="small" type="outline">右</Button>
               </Tooltip>
-              <Tooltip overlayClassName="kuma-tooltip-dark" overlay={overlay} placement="rightBottom" trigger={['click']}>
+              <Tooltip overlay={overlay} placement="rightBottom" trigger={['click']}>
                 <Button style={{ marginTop: 10 }} size="small" type="outline">右下</Button>
               </Tooltip>
             </div>

@@ -8,6 +8,7 @@
 
 @__tooltipPrefixCls: kuma-tooltip;
 @__tooltipDarkColor: rgba(44,47,51,0.80);
+@__tooltipDarkColorNoAlpha: rgba2rgb(rgb(255, 255, 255), @__tooltipDarkColor);
 
 .@{__tooltipPrefixCls} {
   position: absolute;
@@ -91,7 +92,7 @@
         border-bottom-color: @normal-alpha-6;
         border-width: 0px 7px 7px;
         &:before {
-          top: 2px;
+          top: 1px;
           left: -6px;
           border-width: 0px 6px 6px;
           border-bottom-color: white;
@@ -120,7 +121,7 @@
         border-width: 7px 7px 7px 0px;
         &:before {
           top: -6px;
-          left: 2px;
+          left: 1px;
           border-width: 6px 6px 6px 0px;
           border-right-color: white;
           
@@ -144,7 +145,7 @@
     height: 0px;
     border-style: solid;
     border-color: transparent;
-    
+    border-radius: 3px;
     &:before {
       position: absolute;
       content: '';
@@ -167,25 +168,25 @@
     text-align: center;
     color: @normal-alpha-2;
     text-decoration: none;
-    border-radius: @global-border-radius;
     background-color: #fff;
   }
 }
 
 .@{__tooltipPrefixCls}-dark {
-  .@{__tooltipPrefixCls}-inner {
-    background:  @__tooltipDarkColor;
-    color: white;
+  .@{__tooltipPrefixCls}-content {
+    border-color: @__tooltipDarkColorNoAlpha;
   }
-  .@{__tooltipPrefixCls}-arrow {
-    // background: @__tooltipDarkColor;
+  .@{__tooltipPrefixCls}-inner {
+    background:  @__tooltipDarkColorNoAlpha;
+    color: white;
   }
   &.@{__tooltipPrefixCls}-placement-left,
   &.@{__tooltipPrefixCls}-placement-leftTop,
   &.@{__tooltipPrefixCls}-placement-leftBottom {
     .@{__tooltipPrefixCls}-arrow {
+      border-left-color: @__tooltipDarkColorNoAlpha;
       &:before {
-        border-left-color: @__tooltipDarkColor;
+        border-left-color: @__tooltipDarkColorNoAlpha;
       }
     }
   }
@@ -193,8 +194,9 @@
   &.@{__tooltipPrefixCls}-placement-topLeft,
   &.@{__tooltipPrefixCls}-placement-topRight {
     .@{__tooltipPrefixCls}-arrow {
+      border-top-color: @__tooltipDarkColorNoAlpha;
       &:before {
-        border-top-color: @__tooltipDarkColor;
+        border-top-color: @__tooltipDarkColorNoAlpha;
       }
     }
   }
@@ -202,8 +204,9 @@
   &.@{__tooltipPrefixCls}-placement-bottomLeft,
   &.@{__tooltipPrefixCls}-placement-bottomRight {
     .@{__tooltipPrefixCls}-arrow {
+      border-bottom-color: @__tooltipDarkColorNoAlpha;
       &:before {
-        border-bottom-color: @__tooltipDarkColor;
+        border-bottom-color: @__tooltipDarkColorNoAlpha;
       }
     }
   }
@@ -212,8 +215,9 @@
   &.@{__tooltipPrefixCls}-placement-rightTop,
   &.@{__tooltipPrefixCls}-placement-rightBottom {
     .@{__tooltipPrefixCls}-arrow {
+      border-right-color: @__tooltipDarkColorNoAlpha;
       &:before {
-        border-right-color: @__tooltipDarkColor;
+        border-right-color: @__tooltipDarkColorNoAlpha;
       }
     }
   } 
