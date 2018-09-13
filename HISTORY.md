@@ -1,6 +1,11 @@
 History
 =======
 
+0.4.9
+---
+
+* `CHANGED` support js style export
+
 0.4.8
 ---
 
