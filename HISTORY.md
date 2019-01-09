@@ -1,6 +1,10 @@
 History
 =======
 
+0.4.10
+
+* `CHANGED` style change: move bg color form inner to content
+
 0.4.9
 ---
 

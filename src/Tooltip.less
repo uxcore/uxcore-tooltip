@@ -159,6 +159,8 @@
     box-shadow: @box-shadow-1;
     border-radius: @global-border-radius;
     border: 1px solid @normal-alpha-6;
+    background-color: #fff;
+    // max-width: 320px;
   }
   &-inner {
     position: relative;
@@ -169,16 +171,15 @@
     text-align: center;
     color: @normal-alpha-2;
     text-decoration: none;
-    background-color: #fff;
   }
 }
 
 .@{__tooltipPrefixCls}-dark {
   .@{__tooltipPrefixCls}-content {
     border-color: @__tooltipDarkColorNoAlpha;
+    background:  @__tooltipDarkColorNoAlpha;
   }
   .@{__tooltipPrefixCls}-inner {
-    background:  @__tooltipDarkColorNoAlpha;
     color: white;
   }
   &.@{__tooltipPrefixCls}-placement-left,
