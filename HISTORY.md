@@ -1,9 +1,27 @@
 History
 =======
 
-0.4.10
+0.4.13
+---
 
-* `CHANGED` style change: move bg color form inner to content
+* `CHANGED` style change: move background-color from inner to content
+
+
+0.4.12
+---
+
+* `CHANGED` support style isolation
+
+
+0.4.11
+---
+
+* `CHANGED` support React@16
+
+0.4.10
+---
+
+* `CHANGED` align border-radius
 
 0.4.9
 ---
