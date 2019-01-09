@@ -5,6 +5,7 @@ import Button from 'uxcore-button';
 export default class Demo extends React.Component {
   render() {
     const overlay = <div style={{}}>提示文字</div>;
+    const longOverlay = <div style={{}}>特别特别长的提示文字特别特别长的提示文字特别特别长的提示文字特别特别长的提示文字</div>;
     return (
       <div className="demo">
         <div>
@@ -17,13 +18,13 @@ export default class Demo extends React.Component {
           <h3>讲解：鼠标点击出现提示</h3>
           <div className="container">
             <div className="top">
-              <Tooltip overlay={overlay} placement="topLeft" trigger={['click']}>
+              <Tooltip overlayClassName="kuma-tooltip-dark" overlay={overlay} placement="topLeft" trigger={['click']}>
                 <Button size="small" type="outline">上左</Button>
               </Tooltip>
-              <Tooltip overlay={overlay} placement="top" trigger={['click']}>
+              <Tooltip overlayClassName="kuma-tooltip-dark" overlay={longOverlay} placement="top" trigger={['click']}>
                 <Button style={{ marginLeft: 10 }} size="small" type="outline">上</Button>
               </Tooltip>
-              <Tooltip overlay={overlay} placement="topRight" trigger={['click']}>
+              <Tooltip overlay={longOverlay} placement="topRight" trigger={['click']} overlayStyle={{ maxWidth: 200 }}>
                 <Button style={{ marginLeft: 10 }} size="small" type="outline">上右</Button>
               </Tooltip>
             </div>

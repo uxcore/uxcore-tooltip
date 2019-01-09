@@ -1,6 +1,10 @@
 History
 =======
 
+0.4.10
+
+* `CHANGED` style changes: add max-width:250px to popover; move bg color form inner to content
+
 0.4.9
 ---
 
